@@ -12,11 +12,12 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 public class WebResolver {
 	
 	@Bean
-	public InternalResourceViewReslover.getViewResolver(){
-		InternalResourceViewResolver.internalResourceViewResolver = new InternalResourceViewResolver();
-		InternalResourceViewResolver.setPrefix("/WEB-INF");
-		InternalResourceViewResolver.setSuffix(".jsp");
-		System.out.println("Resolver Created");
-		return InternalResourceViewReslover;
-	}
+	public InternalResourceViewResolver getViewResolver()
+	{
+		  InternalResourceViewResolver internalResourceViewResolver=new InternalResourceViewResolver();
+		    internalResourceViewResolver.setPrefix("/WEB-INF/");
+		    internalResourceViewResolver.setSuffix(".jsp");
+		    System.out.println("Resolver Created");
+		    return internalResourceViewResolver;
+		}
 }
