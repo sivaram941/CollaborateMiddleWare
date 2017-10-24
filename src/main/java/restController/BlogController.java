@@ -15,9 +15,9 @@ import Com.collaborate.Model.Blog;
 
 @RestController
 public class BlogController {
+	
 	@Autowired
 	BlogDAO blogDAO;
-
 	@GetMapping(value="/getAllBlogs")
 	public ResponseEntity<ArrayList<Blog>> getAllBlogs()
 	{
@@ -47,9 +47,6 @@ public class BlogController {
 	public ResponseEntity<String> testMethod()
 	{
 		return new ResponseEntity<String>("Test RestController",HttpStatus.OK);
-	}
-	{
-		
 	}
 
 }
